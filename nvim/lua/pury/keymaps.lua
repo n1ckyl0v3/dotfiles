@@ -13,7 +13,7 @@ keymap.set("n", "<CR>", ":nohl<CR>")
 keymap.set("n", "x", '"_x')
 keymap.set("n", "<C-e>", ":bnext<CR>")
 keymap.set("n", "<C-q>", ":bprev<CR>")
-keymap.set("n", "<leader>q", ":bdelete<CR>")
+-- keymap.set("n", "<leader>q", ":bdelete<CR>")
 keymap.set("n", "<C-n>", ":Neotree toggle<CR>") -- nvim tree toggle
 keymap.set("n", "<leader>e", ":Neotree reveal<cr>")
 keymap.set("i", "<C-j>", "<enter>")
@@ -21,6 +21,9 @@ keymap.set("i", "<C-v>", '<esc>"+pi')
 keymap.set("n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>")
 -- keymap.set("n", "<leader>ca", "<Cmd>lua vim.lsp.buf.code_action()<CR>")
 keymap.set("n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>")
+vim.cmd([[
+nnoremap <silent><leader>q :<C-U>bprevious <bar> bdelete #<CR>
+]])
 
 -- telescope
 --local builtin = require("telescope.builtin")

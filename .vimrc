@@ -37,7 +37,7 @@ set guioptions -=T
 
 set noerrorbells visualbell t_vb=
 if has('autocmd')
-  autocmd GUIEnter * set visualbell t_vb=
+  autocmd guienter * set visualbell t_vb=
 endif
 
 set clipboard=unnamedplus
