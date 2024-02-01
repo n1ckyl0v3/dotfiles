@@ -1,0 +1,13 @@
+output HDMI-1-0
+mode 1920x1080
+pos 0x0
+primary
+rate 144.00
+x-prop-non_desktop 0
+output eDP-1
+crtc 1
+mode 1920x1080
+pos 1920x0
+rate 60.00
+x-prop-colorspace Default
+x-prop-non_desktop 0

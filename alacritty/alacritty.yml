@@ -46,9 +46,9 @@ window:
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+  padding:
+    x: 5
+    y: 5
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -68,7 +68,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.98
+  opacity: 0.7
 
 # Startup Mode (changes require restart)
 #
@@ -98,8 +98,7 @@ window:
 #
 # Override the variant of the System theme/GTK theme/Wayland client side
 # decorations. Commonly supported values are `Dark`, `Light`, and `None` for
-# auto pick-up. Set this to `None` to use the default theme variant.
-#decorations_theme_variant: None
+# auto pick-up. Set this to `None` to use the default theme variant. decorations_theme_variant: None
 
 # Resize increments
 #
@@ -131,7 +130,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: JetBrainsMono Nerd Font
+    family: BlexMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -142,7 +141,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrainsMono Nerd Font
+    family: BlexMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -153,7 +152,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrainsMono Nerd Font
+    family: BlexMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -164,13 +163,13 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrainsMono Nerd Font
+    family: Lilex Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Bold Italic
+    style: BlexMono Italic
 
   # Point size
-  size: 11.0
+  size: 9.5
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -910,4 +909,4 @@ font:
 #highlight_damage: false
 
 import:
-  - ~/.config/alacritty/themes/themes/solarized_dark.yaml
+  - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
